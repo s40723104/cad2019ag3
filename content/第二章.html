@@ -1,69 +1,160 @@
-<h1>成員</h1>
-<p>組長:</p>
-<p>40723104<span>        </span><span>•<a href="https://github.com/s40723104/cad2019">倉儲</a></span><span>        </span><span>•<a href="https://s40723104.github.io/cad2019/content/index.html">網站</a></span></p>
-<p>組員:</p>
-<p>40423208        <span>•<a href="https://github.com/40423208/cad2019">倉儲</a></span>        <span>•<a href="https://40423208.github.io/cad2019">網站</a></span></p>
-<p>40523142       <span> </span><span>•<a href="https://github.com/s40523142/cad2019">倉儲</a></span>       <span> </span><span>•<a href="https://s40523142.github.io/cad2019/content/index.html">網站</a></span></p>
-<p>40723106       <span> </span><span>•<a href="https://github.com/s40723106/cad2019">倉儲</a></span>       <span> </span><span>•<a href="https://s40723106.github.io/cad2019/content/index.html">網站</a></span></p>
-<p>40723108       <span> </span><span>•<a href="https://github.com/s40723108/cad2019">倉儲</a></span>       <span> </span><span>•<a href="https://s40723108.github.io/cad2019/content/index.html">網站</a></span></p>
-<p>40723111       <span> </span><span>•<a href="https://github.com/s40723111/cad2019">倉儲</a></span>       <span> </span><span>•<a href="https://s40723111.github.io/cad2019/content/index.html">網站</a></span></p>
-<p>40723121       <span> </span><span>•<a href="https://github.com/s40723121/cad2019">倉儲</a></span>       <span> </span><span>•<a href="https://s40723121.github.io/cad2019/content/index.html">網站</a></span></p>
-<p>40723123<strong></strong>       <span> </span><span>•<a href="https://github.com/s40723123/cad2019">倉儲</a></span>       <span> </span><span>•<a href="https://s40723123.github.io/cad2019/content/index.html">網站</a></span></p>
-<p>40723126      <span>  </span><span>•<a href="https://github.com/s40723126/cad2019">倉儲</a></span>       <span> </span><span>•<a href="https://s40723126.github.io/cad2019/content/index.html">網站</a></span></p>
-<p>40723128<span>       </span><span> </span><span>•<a href="https://github.com/s40723128/cad2019">倉儲</a></span><span>      </span><span> </span><span>•<a href="https://s40723128.github.io/cad2019">網站</a></span></p>
-<p>40723130<span>      </span><span> </span><span>•<a href="https://s40723130.github.io/cad2019/content/index.html">倉儲</a></span><span>       </span><span> </span><span>•<a href="https://s40723130.github.io/cad2019/content/index.html">網站</a></span></p>
-<p>40723133<span>      </span><span> </span><span>•<a href="https://github.com/s40723133/cad2019">倉儲</a></span><span>       </span><span> </span><span>•<a href="https://s40723133.github.io/cad2019/content/index.html">網站</a></span></p>
-<h4>利用 cmsimde 建立靜態網誌方法:</h4>
-<p>1. 在 github 建立倉儲, git clone 到近端</p>
-<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
-<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
-<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
-<h1>Develop</h1>
-<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
-<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
-<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<h1>NX12翻譯</h1>
-<h2>前言</h2>
-<p><span>NX 是世界上最先進的CAD/CAM/CAE集成產品之一Simmen PLM software 所開發，可開發之產品非常廣泛，NX簡化複雜的產品並加快了產品推向市場的過程，為企業提供了一個巨大的價值。</span><br/><span>NX結合了許多科學原理、概念設計、3D建模、文檔、工程分析、圖形模擬和並行工程。擁有強大的混和建模過能，除了建模標準零件也可以用於設計複雜的形狀如:機翼，實體和去面建模技術讓他成為強大的工具集。</span><br/><span>這本教學指南將一步步教使用者使用NX12，目標是以前沒使用過NX的使用者，但是使用舊版本NX的用戶可以學習新的介面和功能，用戶將從NX12開始到創建模具各種功能的模型設計指導應用程序，每一章都會透過對話框和截圖來說明，這些組件隨後用於裝配建模，加工和有限元素分析。組件文件也可以在線下載和使用。我們先發布了Unigraphics 18教程，隨後針對NX 2進行了更新，隨後更新了NX 3，NX 5，NX 7，NX 9和NX10。此內容進一步更新了NX 12。\</span></p>
-<p><span>翻譯40723123</span></p>
-<h2>第一章</h2>
-<p><span>現代製造環境的特徵在於交付範式品種不斷增加的產品，在不斷增加的情況下，小批量和高質量全球競爭。除非引入新的行業，否則它們無法在全球競爭中生存產品質量更高，成本更低，交付週期更短。有激烈國際競爭和技術工人的減少。隨著變化計算能力和更廣泛的設計和生產軟件工具可用性，工程師們現在使用計算機輔助設計CAD、計算機輔助製造CAM、計算機輔助工程CAE系統可使其設計和生產過程自動化。這些現在，技術每天都用於各種不同的工程任務。下面是一個簡短的產品期間如何使用CAD，CAM和CAE技術的說明實現過程。</span></p>
-<p><span>1.1產品實現過程</span></p>
-<p><span>產品實現過程可以大致分為兩個階段：設計和製造。設計過程從識別新客戶需求和要設計的變量開始改進，由營銷人員從顧客。一旦收集了相關的設計信息，便制定了設計規範。進行可行性研究並提供相關設計信息以及詳細的設計和分析執行。詳細設計包括設計概念化，預期產品圖紙，草圖和幾何建模。分析包括壓力分析，干擾檢查，運動學分析，質量特性計算和公差分析以及設計優化。從這些活動中獲得的結果的質量與分析的質量以及進行分析的工具。<br/><span>製造過程從生產開始的車間活動開始規劃，使用設計過程圖並以實際產品結束。處理規劃包括生產計劃，材料採購和機器等活動選擇。有各種各樣的任務，例如購買新工具，NC編程和質量在生產過程的各個階段進行檢查。流程計劃包括對產品製造中使用的所有流程的規劃。通過質量控制檢查的零件經功能測試組裝，包裝，貼標籤並運送給客戶。</span></span></p>
-<p><span><span>表示產品實現過程的圖（Ibrahim Zeid撰寫的Mastering CAD / CAM，麥格勞·希爾（McGraw Hill，2005）。圖</span></span></p>
-<p><span><span><img alt="" height="471" src="/images/1576155124039.jpg" width="627"/></span></span></p>
-<p>1.2 CAD / CAM開發的簡要歷史</p>
-<p>當前的CAD / CAM技術的起源可以追溯到文明的開始埃及的工程師認可圖形通信。正交投影實踐今天是在1800年代發明的CAD / CAM系統的真正開發始於1950年代。 CAD / CAM在上個世紀經歷了四個主要的發展階段。 1950年代被稱為交互式計算機圖形時代。麻省理工學院伺服機構實驗室在三軸銑床上演示了數控（NC）的概念。發展歷程在這個時代，由於當時計算機的缺點而放慢了速度。1950年代後期開始開發自動編程工具（APT），並探索通用汽車公司互動圖形的潛力。<br/>1960年代是交互式計算機圖形學最關鍵的研究時期。伊万·薩瑟蘭開發了一個畫板系統，該系統演示了創建圖紙的可能性以及陰極射線管（CRT）上的物體交互。CAD一詞開始出現“設計”一詞超出了基本的製圖概念。通用汽車宣布了他們的DAC-1系統和Bell Technologies推出了GRAPHIC 1遠程顯示系統。<br/>1970年代，計算機圖形學的前十年研究開始富有成果，並實現了交互式計算機圖形在提高生產力方面的潛力按行業，政府和學術界。 1970年代被描述為計算機的黃金時代起草和特別儀器設計應用程序的開始。國家計算機圖形協會（NCGA）成立，並且初始圖形交換規範（IGES）開始了。<br/>在1980年代，新的理論和算法得到了發展，並且將各種設計要素整合在一起並發展了製造業。主要的研發重點是擴大CAD / CAM系統超越了三維幾何設計，提供了更多的工程設計應用程序。<br/>當前的CAD / CAM開發側重於高效，快速的集成和自動化設計和製造的各種要素以及新算法的開發。有許多商業化的CAD / CAM軟件包可用於用戶友好的直接使用而且非常熟練。</p>
-<p>以下是當前市場中的一些商業軟件包。</p>
-<p>Solid Edge, AutoCAD, Inventor and TurboCAD是一些負擔得起的CAD軟件系統。</p>
-<p>NX, Pro-E, CATIA and SolidWorks是高端的建模和設計軟件更昂貴但功能更強大的系統。這些軟件系統還具有計算機輔助的製造和工程分析功能。</p>
-<p>Onshape and Fusion 360是基於 CAD software提供CAD用戶的瀏覽器。</p>
-<p>ANSYS, ABAQUS, NASTRAN and COMSOL 是主要用於CAE的軟件包目的。</p>
-<p>1.3 定義CAD/CAM/CAE</p>
-<p>1.3.1 Computer Aided Design – CAD<br/>CAD是與使用計算機系統協助創建，修改，分析和優化設計。任何體現計算機圖形的計算機程序可以對在設計過程中促進工程功能的應用程序進行分類作為CAD軟件。</p>
-<p><br/>CAD的最基本作用是定義設計的幾何形狀-機械零件，產品組件，建築結構，電子電路，建築物佈局等。最偉大的CAD系統的好處是可以節省大量時間並減少由否則，每次需要時，都必須從頭開始重新定義設計的幾何形狀。</p>
-<p>1.3.2 Computer Aided Manufacturing – CAM</p>
-<p>CAM技術涉及計劃，管理和控制製造的計算機系統通過計算機界面與工廠的生產資源進行操作。<br/>CAM最重要的領域之一是數控（NC）。這是使用的技巧用於控制機床的程序化指令，該機床可以進行原始的切削，銑削，磨削，沖壓或車削庫存成成品。 CAM的另一個重要功能是在機器人編程中。流程計劃也是計算機自動化的目標。</p>
-<p>1.3.3 Computer Aided Engineering – CAE</p>
-<p>CAE技術使用計算機系統來分析CAD創建的產品的功能，允許設計師模擬和研究產品的行為，以便設計完善和優化。<br/>CAE工具可用於許多不同類型的分析。例如運動學分析程序可用於確定機構中的運動路徑和連桿速度。動態分析程序可用於確定複雜結構中的載荷和位移裝配，例如汽車。最受歡迎的分析方法之一是使用有限元素方法（FEM）。該方法可用於確定應力，變形，傳熱，磁場分佈，流體流動以及其他通常很難解決的連續磁場問題用其他方法解決。</p>
-<p>1.4。本教程的範圍</p>
-<p>本教程是為有興趣學習如何使用NX 12的學生和工程師編寫的用於設計機械零件和組件。學習使用NX 12也將很有價值學習如何使用其他CAD系統，例如PRO-E和CATIA。本教程提供了學習NX 12的系統方法。</p>
-<p>第2章介紹了從開始會話到熟悉NX的NX 12基本知識。通過練習基本功能（如打印，保存和退出）來佈局12。它還給出了簡短的描述坐標系，圖層，各種工具箱和其他重要命令在後面的章節中使用。</p>
-<p>第3章介紹了素描的概念。它描述瞭如何創建草圖並給出幾何和尺寸約束。從今天開始，本章非常重要組件的幾何形狀非常複雜，僅憑基本特徵很難建模。零件的實際設計和建模始於第4章。它描述了不同的功能例如參考特徵，掃描特徵和原始特徵，以及如何使用這些特徵創建設計。對特徵執行各種特徵操作。</p>
-<p>您將在第5章中學習如何從零件模型創建工程圖。在本章中，我們將通過添加視圖，標註零件圖紙尺寸來演示如何創建圖紙，以及修改圖形中的各種屬性，例如文本大小，箭頭大小和公差。</p>
-<p>第6章介紹了裝配建模的概念及其術語。它描述了TopDown建模和Bottom-Up建模。我們將使用自下而上的模型進行組裝組件變成產品。</p>
-<p>第7章介紹了自由格式建模。曲線和平滑曲面的建模方法將被演示。</p>
-<p>第8章概述了NX 12中提供的Design Simulations的簡要介紹。有限元分析。</p>
-<p>第9章將是在製造中實施設計模型的實時經驗加工環境。本章介紹工具的生成，驗證和模擬<br/>創建CNC（計算機數字代碼）以從多軸生產設計零件的路徑甚至先進的CNC機器。</p>
-<p>每章中使用的示例和練習問題都經過精心設計，以使它們最終得以應用組裝在本章中。由於這項獨特的功能，您應該保存所有的模型在每一章中都有創建。</p>
-<p>翻譯40723123</p>
-<p>=======</p>
-<h2>第二章</h2>
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>CMSiMDE 網際內容管理系統</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">CMSiMDE 網際內容管理系統</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='成員.html'>成員</a><li><a href='Develop.html'>Develop</a><li class='has-children'><a href='NX12翻譯.html'>NX12翻譯</a><ul class='dropdown'><li><a href='前言.html'>前言</a><li><a href='第一章.html'>第一章</a><li><a href='第二章.html'>第二章</a></li></ul><li class='has-children'><a href='NX12.html'>NX12</a><ul class='dropdown'><li><a href='NX12零組件繪圖.html'>NX12零組件繪圖</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">第一章 << <a href='第一章.html'>Previous</a> <a href='NX12.html'>Next</a> >> NX12<br /><h1>第二章</h1>
 <p>第<span>2</span>章<span>-</span>入門</p>
 <p>首先開始<span>NX 12</span>會話。 本章將提供使用所需的基礎知識</p>
 <p>任何<span>CAD / CAM</span>軟體包。 您將學習開始，理解和使用</p>
@@ -333,7 +424,46 @@
 <p>➢選擇一個類別並將命令從“命令”列表中拖動到所需的位置</p>
 <p><img alt="" height="344" src="https://s40723111.github.io/cad2019/images/42.png" width="322"/></p>
 <p>您可以通過以下方式自定義<span>NX 12</span>界面的設置單擊資源欄上的“角色”選項卡。角色選項卡具有工具欄菜單的不同設置顯示在<span>NX 12</span>界面上。 它可以讓你自定義您希望在工具欄中顯示的工具欄接口。</p>
-<p><img alt="" height="387" src="https://s40723111.github.io/cad2019/images/43.png" width="242"/></p><h1>NX12</h1>
-<h2>NX12零組件繪圖</h2>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/r8RsZEwgUGE" width="560"></iframe></p>
-<p></p>
+<p><img alt="" height="387" src="https://s40723111.github.io/cad2019/images/43.png" width="242"/></p><br />第一章 << <a href='第一章.html'>Previous</a> <a href='NX12.html'>Next</a> >> NX12</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
