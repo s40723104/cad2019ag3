@@ -1,0 +1,224 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>CMSiMDE 網際內容管理系統</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">CMSiMDE 網際內容管理系統</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='成員.html'>成員</a><li><a href='Develop.html'>Develop</a><li class='has-children'><a href='NX12翻譯.html'>NX12翻譯</a><ul class='dropdown'><li><a href='前言.html'>前言</a><li><a href='第一章.html'>第一章</a><li><a href='第二章.html'>第二章</a><li><a href='第七章.html'>第七章</a><li><a href='第八章.html'>第八章</a></li></ul><li class='has-children'><a href='NX12.html'>NX12</a><ul class='dropdown'><li><a href='NX12零組件繪圖.html'>NX12零組件繪圖</a></li></ul><li class='has-children'><a href='W17協同任務.html'>W17協同任務</a><ul class='dropdown'><li class='has-children'><a href='Building a clean model tutorial.html'>Building a clean model tutorial</a><ul class='dropdown'><li><a href='40723111.html'>40723111</a><li><a href='40723121.html'>40723121</a><li><a href='40723123.html'>40723123</a><li><a href='40723126.html'>40723126</a><li><a href='40723108.html'>40723108</a></li></ul><li class='has-children'><a href='Webots User Guide.html'>Webots User Guide</a><ul class='dropdown'><li><a href='40723104.html'>40723104</a><li><a href='40723130.html'>40723130</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">40723111 << <a href='40723111.html'>Previous</a> <a href='40723123.html'>Next</a> >> 40723123<br /><h1>40723121</h1>
+<p>by40723121</p>
+<p>The problem with above's shape is that we cannot simplify it nicely, because of the holes it contains. So we have to go the more complicated way via the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/shapeEditModes.htm">shape edit mode</a></span>, where we can extract individual elements that logically belong to the same convex sub-entity. This process can take several iterations: we first extract 3 approximate convex elements. For now, we ignore the triangles that are part of the two holes. While editing a shape in the shape edit mode, it can be convenient to switch the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/layerSelectionDialog.htm">visibility layers</a></span>, in order to see what is covered by other scene items.</p>
+<p>上面形狀的問題是，由於其中包含孔，我們無法很好地簡化它。因此，我們必須通過形狀編輯模式進行更複雜的處理，在該模式下，我們可以提取邏輯上屬於同一凸形子實體的單個元素。此過程可能需要進行多次迭代：我們首先提取<span>3</span>個近似凸元素。現在，我們忽略作為兩個孔的一部分的三角形。在形狀編輯模式下編輯形狀時，可以方便地切換可見性圖層，以查看其他場景項所覆蓋的內容。</p>
+<p><span> <img src="http://www.coppeliarobotics.com/helpFiles/en/images/modelTut7.jpg"/></span></p>
+<p></p>
+<p><span> </span></p>
+<p>We end up with a toal of three shapes, but two of them will need further improvement. Now we can erase the triangles that are part of the holes. Finally, we extract the convex hull individually for the 3 shapes, then merge them back together with [Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; merge selected shapes]:</p>
+<p>我們最終得到三個形狀的總和，但是其中兩個將需要進一步改進。現在我們可以擦除作為孔的一部分的三角形。最後，我們分別提取<span>3</span>種形狀的凸包，然後將其與<span>[</span>菜單欄<span>-&gt;</span>編輯<span>-&gt;</span>分組<span>/</span>合併<span>-&gt;</span>合併所選形狀<span>]</span>合併在一起：</p>
+<p><span> </span></p>
+<p><span> <img src="http://www.coppeliarobotics.com/helpFiles/en/images/modelTut8.jpg"/></span></p>
+<p><span> </span></p>
+<p>In CoppeliaSim, we can enable/disable edge display for each shape. We can also specify an angle that will be taken into account for the edge display. A similar parameter is the <strong>shading angle</strong>, that dictates how facetted the shape will display. Those parameters, and a few others such as the shape <strong>color</strong>, can be adjusted in the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/simulationPropertiesDialog.htm">shape properties</a></span>. Remember that <span><a href="http://www.coppeliarobotics.com/helpFiles/en/shapes.htm">shapes come in various flavours</a></span>. In this tutorial we have only dealt with simple shapes up to now: a simple shape has a single set of visual attributes (i.e. one color, one shading angle, etc.). If you merge two shapes, then the result will be a simple shape. You can also group shapes, in which case, each shape will retain its visual attributes.</p>
+<p>在<span>CoppeliaSim</span>中，我們可以啟用<span>/</span>禁用每種形狀的邊緣顯示。我們還可以指定邊緣顯示時要考慮的角度。相似的參數是陰影角，它指示形狀將在多方面顯示。這些參數以及其他一些參數（例如形狀顏色）可以在形狀屬性中進行調整。請記住，形狀有多種風味。到目前為止，在本教程中，我們僅處理簡單的形狀：簡單的形狀具有一組視覺屬性（即一種顏色，一個陰影角度等）。如果合併兩個形狀，則結果將是一個簡單的形狀。您還可以對形狀進行分組，在這種情況下，每個形狀將保留其視覺屬性。</p>
+<p><span> </span></p>
+<p>In next step, we can merge elements that logically belong together (if they are part of the same rigid element, and if they have the same visual attributes). Then we change the visual attributes of the various elements. The easiest ist to adjust a few shapes that have different colors and visual attributes, and if we name the color with a specific string, we can later easily programmatically change that color, also if the shape is part of a compound shape. Then, we select all the shapes that have the same visual attributes, then control-select the shape that was already adjusted, then click <strong>Apply to selection</strong>, once for the <strong>Colors</strong>, once for the <strong>other properties</strong>, in the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/shapeProperties.htm">shape properties</a></span>: this transfers all visual attributes to the selected shapes (including the color name if you provided one). We end up with 17 individual shapes:</p>
+<p> </p>
+<p> </p>
+<p>在下一步中，我們可以合併邏輯上屬於一起的元素（如果它們屬於同一剛性元素，並且具有相同的視覺屬性）。然後，我們更改各種元素的視覺屬性。調整具有不同顏色和視覺屬性的幾種形狀的最簡便方法，如果我們使用特定的字符串來命名顏色，則以後可以輕鬆地以編程方式更改該顏色，即使該形狀是複合形狀的一部分。然後，我們選擇所有具有相同視覺屬性的形狀，然後控制選擇已調整的形狀，然後單擊“應用於選擇”，一次是“顏色”，一次是其他屬性，在形狀屬性中：這將轉移所有所選形狀的視覺屬性（如果提供的話，還包括顏色名稱）。我們最終得到<span>17</span>個單獨的形狀：</p>
+<p><img src="http://www.coppeliarobotics.com/helpFiles/en/images/modelTut9.jpg"/></p>
+<p>Now we can group the shapes that are part of the same link with [Menu bar --&gt; Edit --&gt; Grouping/merging -&gt; Group selected shapes]. We end up with 7 shapes: the base of the robot (or base of the robot's hierarchy tree), and 6 mobile links. It is also important to correctly name your objects: you we do this with a double-click on the object name in the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy">scene hierarchy</a></span>. The base should always be the robot or model name, and the other objects should always contain the base object name, like: <em>robot</em> (base), <em>robot_link1</em>, <em>robot_proximitySensor</em>, etc. By defaut, shapes will be assigned to visibility layer 1, but can be changed in the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/commonPropertiesDialog.htm">object common properties</a></span>. By default, only <span><a href="http://www.coppeliarobotics.com/helpFiles/en/layerSelectionDialog.htm">visibility layers 1-8 are activated for the scene</a></span>. We now have following (the model <em>ResizableFloor_5_25</em> was temporarily made invisible in the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/modelDialog.htm">model properties dialog</a></span>):</p>
+<p> </p>
+<p>現在，我們可以使用<span>[</span>菜單欄<span>-&gt;</span>編輯<span>-&gt;</span>分組<span>/</span>合併<span>-&gt;</span>分組所選形狀<span>]</span>對屬於同一鏈接的形狀進行分組。我們最終得到<span>7</span>個形狀：機器人的基礎（或機器人的層次結構樹的基礎）和<span>6</span>個移動鏈接。正確命名對像也很重要：您可以通過雙擊場景層次結構中的對象名稱來做到這一點。基礎應始終是機械手或模型名稱，其他對象應始終包含基礎對象名稱，例如：<span>robot</span>（基礎），<span>robot_link1</span>，<span>robot_proximitySensor</span>等。通過默認，形狀將分配給可見性層<span>1</span>，但可以在對象通用屬性中進行更改。默認情況下，僅激活場景的可見性層<span>1-8</span>。現在，我們有了以下內容（模型<span>ResizableFloor_5_25</span>模型在模型屬性對話框中暫時不可見）：</p>
+<p><span> <img src="http://www.coppeliarobotics.com/helpFiles/en/images/modelTut10.jpg"/></span></p>
+<p>When a shape is created or modified, CoppeliaSim will automatically set its reference frame position and orientation. A shape's reference frame will always be positioned at the shape's geometric center. The frame orientation will be selected so that the shape's bounding box remains as small as possible. This does not always look nice, but we can always reorient a shape's reference frame at any time. We now reorient the reference frames of all our created shapes with [Menu bar --&gt; Edit --&gt; Reorient bounding box --&gt; with reference frame of world]. You have more options to reorient a reference frame in the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/geometryDialog.htm">shape geometry dialog</a></span>.</p>
+<p>創建或修改形狀時，<span>CoppeliaSim</span>將自動設置其參考框架的位置和方向。形狀的參考框架將始終位於形狀的幾何中心。將選擇框架方向，以便形狀的邊界框保持盡可能小。這並不總是看起來不錯，但是我們隨時可以隨時調整形狀的參考框架的方向。現在，我們可以使用<span>[</span>菜單欄<span>-&gt;</span>編輯<span>-&gt;</span>重定向邊界框<span>-&gt;</span>使用世界參考框架<span>]</span>重新調整所有已創建形狀的參考框架。您有更多選項可以在形狀幾何對話框中重新定向參考框架。</p><br />40723111 << <a href='40723111.html'>Previous</a> <a href='40723123.html'>Next</a> >> 40723123</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
