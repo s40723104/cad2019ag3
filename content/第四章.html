@@ -1,0 +1,349 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>CMSiMDE 網際內容管理系統</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">CMSiMDE 網際內容管理系統</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='成員.html'>成員</a><li><a href='Develop.html'>Develop</a><li class='has-children'><a href='NX12翻譯.html'>NX12翻譯</a><ul class='dropdown'><li><a href='前言.html'>前言</a><li><a href='第一章.html'>第一章</a><li><a href='第二章.html'>第二章</a><li><a href='第四章.html'>第四章</a><li><a href='第七章.html'>第七章</a><li><a href='第八章.html'>第八章</a></li></ul><li class='has-children'><a href='NX12.html'>NX12</a><ul class='dropdown'><li><a href='NX12零組件繪圖.html'>NX12零組件繪圖</a></li></ul><li class='has-children'><a href='W17協同任務.html'>W17協同任務</a><ul class='dropdown'><li class='has-children'><a href='Building a clean model tutorial.html'>Building a clean model tutorial</a><ul class='dropdown'><li><a href='40723111.html'>40723111</a><li><a href='40723121.html'>40723121</a><li><a href='40723123.html'>40723123</a><li><a href='40723126.html'>40723126</a><li><a href='40723108.html'>40723108</a></li></ul><li class='has-children'><a href='Webots User Guide.html'>Webots User Guide</a><ul class='dropdown'><li><a href='40723104.html'>40723104</a><li><a href='40723130.html'>40723130</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">第二章 << <a href='第二章.html'>Previous</a> <a href='第七章.html'>Next</a> >> 第七章<br /><h1>第四章</h1>
+<p>第4章-三維建模</p>
+<p>本章討論了NX 12中三維（3D）建模的基礎。我們將討論</p>
+<p>什麼是特徵，什麼是不同類型的特徵，什麼是原語以及如何</p>
+<p>使用原語的功能在NX 12中建模。這將使NX 12在建模部分中搶先一步並了解3D建模中使用表單特徵的知識。一旦這些功能</p>
+<p>在介紹之後，我們將重點介紹功能操作，這些功能可以應用於</p>
+<p>實體的曲面和邊緣或您創建的特徵。這些包括錐度，邊緣融合，面</p>
+<p>混合，倒角，修剪等。在解釋了功能操作之後，本章將逐步引導您</p>
+<p>一些例子。</p>
+<p>在NX 12中，特徵是具有已定義的父母的一類對象。功能是有關聯的，由一個或多個父母定義，其創建和修改的順序保留在模型，從而通過“歷史記錄”捕獲它。父母可以是幾何對像或數字對象變量。特徵包括圖元，表面和/或實體以及某些線框對象（例如作為曲線以及相關的修剪和橋樑曲線）。例如，一些常見功能包括塊，圓柱體，圓錐體，球體，擠壓體和旋轉體。</p>
+<p>常用功能可以分類如下：</p>
+<p>- Body：一類包含實體和圖紙的對象</p>
+<p>- Solid Body：包含一定體積的面和邊緣的集合</p>
+<p>- Sheet Body：一個或多個不包含體積的面的集合</p>
+<p>- Face：主體外部的區域，被邊緣包圍</p>
+<p>4.1功能類型</p>
+<p>表單特徵有六種類型：基元，參考特徵，掃描特徵，刪除功能，提取功能和用戶定義的功能。 與以前的版本相似，NX 12存儲插入菜單選項下的所有表單功能。 表單功能也可以在表單功能工具欄。</p>
+<p>點擊菜單上的插入</p>
+<p>如您所見，右側圖中標記的菜單包含Form的指令。表單功能圖標在主頁工具欄中，如下所示。 您可以選擇您經常使用的圖標。</p>
+<p>➢ 點擊Home Toolbar中的下拉箭頭</p>
+<p>➢ 選取Feature Group</p>
+<p>4.1.1基元</p>
+<p>它們使您可以以通用建築形狀的形式創建實體。 基元包括：</p>
+<ul>
+<li>塊</li>
+<li>圓筒</li>
+<li>錐</li>
+<li>球體</li>
+</ul>
+<p>基元是主要實體。 因此，我們將從對基元的簡短描述開始，然後再對各種對象進行建模。</p>
+<p>4.1.2參考功能</p>
+<p>這些功能使您可以創建參考點，參考軸，參考平面或參考坐標，這些參考點可用於建造其他特徵。</p>
+<p>➢點選菜單→插入→基準點/點或單擊功能欄中特徵組裡的基準平面以查看不同的參考特徵選項：基準平面，基準軸，基準CSYS和點。</p>
+<p>4.1.3掃描功能</p>
+<p>這些功能使您可以通過拉伸或旋轉截面來創建實體。 掃描功能包括：</p>
+<ul>
+<li>擠壓成型</li>
+<li>旋轉成型</li>
+<li>沿著引導掃描</li>
+<li>管</li>
+<li>樣式掃描</li>
+</ul>
+<p>要選擇掃描功能，您可以執行以下操作：</p>
+<p>➢單擊插入→設計拉伸和旋轉特徵，或單擊功能欄中特徵組的拉伸。</p>
+<p>或者.</p>
+<p>➢單擊插入→掃描或在功能區欄中功能組的單擊更多，以找到所有可用選項，包括掃描</p>
+<p>4.1.4刪除功能</p>
+<p>刪除功能使您可以通過從其他零件移除實體零件來創建實體。</p>
+<p>➢單擊插入→設計特徵</p>
+<p>刪除功能包括：</p>
+<ul>
+<li>孔</li>
+<li>口袋</li>
+<li>插槽</li>
+<li>凹槽</li>
+</ul>
+<p>4.1.5提取功能</p>
+<p>這些功能使您可以通過提取曲線，面和區域來創建實體。 這些功能在“關聯複印”和“偏移/縮放”菜單下有很大的間距。 提取功能包括：</p>
+<ul>
+<li>提取物</li>
+<li>薄殼</li>
+<li>加厚板</li>
+<li>水平面</li>
+<li>曲線表</li>
+</ul>
+<p>➢單擊插入→關聯副本→提取提取選項，或單擊更多功能區欄中的要素組以查找“提取幾何體”</p>
+<p>➢單擊插入→實體/殼和厚板助手的偏移/比例或在功能區欄的特徵組中單擊更多以找到偏移/比例選項</p>
+<p> </p>
+<p> </p>
+<p>➢單擊插入→曲線的邊界平面和圖紙的表面</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>4.1.6用戶定義的功能</p>
+<p>這些功能使您可以創建自己的表單功能，以自動化常用的設計元素。 您可以使用用戶定義的功能來擴展內置表單功能的範圍和功能。</p>
+<p>➢單擊插入→設計特徵→用戶定義</p>
+<p> </p>
+<p>4.2基本原則</p>
+<p>基本原則是基礎要素，可以從中創建許多其他要素。 基本圖元是塊，圓柱體，圓錐體和球體。 基元是非關聯的，這意味著它們不與創建它們的幾何圖形有關聯。</p>
+<p>請注意，通常使用掃描功能來創建基元，而不是此處提到的命令。</p>
+<p>4.2.1建模塊</p>
+<p>➢創建一個新文件並將其命名為</p>
+<p>Arborpress_plate.prt</p>
+<p>➢選擇“插入”→“設計特徵”→“塊”，或單擊“表單特徵”工具欄中的“塊”圖標</p>
+<p> </p>
+<p>出現“阻止”窗口。 定義塊主要有三件事，即塊的類型，原點和尺寸。 要存取類型，請滾動“類型”下的下拉菜單。 有三種創建塊基元的方法：</p>
+<ul>
+<li>原點和邊長</li>
+<li>高度和兩點</li>
+<li>兩個對角點</li>
+</ul>
+<p>➢確保選擇了原點和邊長方法</p>
+<p>現在，我們將使用“點構造器”選擇原點：➢單擊“原點”下方的“點對話框”圖標</p>
+<p>“點構造器”對話框將打開。 XC，YC，ZC點的默認值應為0。</p>
+<p>➢點擊確定</p>
+<p>阻止窗口將再次出現。</p>
+<p>➢在窗口中輸入以下尺寸</p>
+<p>長度（XC）= 65英寸</p>
+<p>寬度（YC）= 85英寸</p>
+<p>高度（ZC）= 20英寸</p>
+<p>➢點擊確定</p>
+<p>如果您在屏幕上看不到任何內容，</p>
+<p>➢右鍵單擊並選擇FIT。 您也可以按&lt;Ctrl&gt; + F</p>
+<p>➢右鍵單擊屏幕，然後單擊“東方視圖”→“ Trimetric”</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>你應該能看到完整的實體模型，儲存並關閉零件檔。</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>第一次翻原文書，雖然說沒有很複雜，但有很多NX內的工具名稱需要另外去找意思才有辦法知道名稱，這也花了我一點時間去對應它的中文，從中也讀到了一些未曾在NX中使用過的功能。</p>
+<p>4.2.2對軸建模</p>
+<p>讓我們繼續進行建模，該軸使用基本體將兩個圓柱體和一個圓錐體連接在一起。</p>
+<p>➢創建一個新文件並將其另存為Impeller_shaft.prt</p>
+<p>➢選擇插入→設計特徵→圓柱體，或在功能區欄中的特徵組中單擊更多以在設計特徵部分中找到圓柱體與“塊”相似，創建圓柱體需要定義三件事：“類型”，“軸和原點”以及“尺寸”。</p>
+<p>圓柱可以通過兩種類型定義，可以通過滾動“類型”下的下拉菜單來獲得</p>
+<ul>
+<li>軸，直徑和高度</li>
+<li>弧度和高度</li>
+</ul>
+<p>➢選擇軸，直徑和高度</p>
+<p>➢單擊指定向量旁邊的向量構造器圖標，然後選擇ZC軸圖標</p>
+<p>➢單擊“指定點”旁邊的“點對話框”圖標以設置圓柱體的原點</p>
+<p>➢將所有XC，YC和ZC坐標設置為0</p>
+<p>您可以看到所選點是WCS的原點</p>
+<p>➢在窗口的下一個對話框中，鍵入以下值</p>
+<p>直徑= 4英寸</p>
+<p>高度= 18英寸</p>
+<p>➢點擊確定</p>
+<p>➢右鍵單擊屏幕，選擇“定向視圖”→“等軸測”</p>
+<p>圓柱體將如右圖所示。現在，我們將在圓柱體的一端創建一個圓錐體。</p>
+<p>➢選擇插入→設計特徵→圓錐體，或在功能區欄中的特徵組中單擊更多以在設計特徵部分中找到圓錐體</p>
+<p>與“塊”和“圓柱體”類似，有多種創建圓錐體的方法，可以通過在“類型”框中滾動下拉菜單來查看。</p>
+<ul>
+<li>直徑和高度</li>
+<li>直徑和半角</li>
+<li>底座直徑，高度和半角</li>
+<li>頂部直徑，高度和半角</li>
+<li>兩個同軸弧</li>
+</ul>
+<p>➢選擇直徑和高度</p>
+<p>➢單擊指定向量旁邊的向量構造器圖標</p>
+<p>➢選擇ZC軸圖標，使矢量指向Z軸正方向</p><br />第二章 << <a href='第二章.html'>Previous</a> <a href='第七章.html'>Next</a> >> 第七章</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
