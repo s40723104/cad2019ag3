@@ -155,7 +155,89 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">Webots User Guide << <a href='Webots User Guide.html'>Previous</a> <a href='40723130.html'>Next</a> >> 40723130<br /><h1>40723104</h1>
-<br />Webots User Guide << <a href='Webots User Guide.html'>Previous</a> <a href='40723130.html'>Next</a> >> 40723130</div>
+<p>教程2：修改環境翻譯</p>
+<p>Webots用戶指南Webots User Guied</p>
+<p>教程2：修改環境</p>
+<p><strong>Tutorial 2: Modification of the Environment</strong><strong> </strong></p>
+<p> </p>
+<p>在本教程中，我們將教您如何在環境中創建簡單對象。 第一步將是創建一個與環境互動的球。 我們將處理與節點有關的幾個概念：它們的含義，如何創建它們，必須如何關聯它們等等。此外，我們還將了解如何設置物理學。</p>
+<p>In this tutorial, we will teach you how to create simple objects in the environment. The first step will be to create a ball which will interact with the environment. We will tackle several concepts related to the nodes: what is their meaning, how to create them, how they have to be affiliated, etc. Moreover we will see how to set up physics.</p>
+<p>將介紹幾種節點。 它們的詳細定義可以在參考手冊中找到。 將節點圖表顯示在您的面前，也將有助於理解節點繼承關係</p>
+<p>Several kinds of nodes will be introduced. Their detailed definition can be found in <a href="https://cyberbotics.com/doc/reference/nodes-and-api-functions">Reference Manual</a>. Having the <a href="https://cyberbotics.com/doc/reference/node-chart">nodes chart diagram</a> in front of you, will also help understanding the nodes inheritance relationship.</p>
+<p>指數<strong>Index</strong></p>
+<ul>
+<li>新的模擬<span><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#a-new-simulation">A New Simulation</a></span></li>
+<li>修改地板<span><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#modifying-the-floor">Modifying the Floor</a></span></li>
+<li>實體節點<span><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#the-solid-node">The Solid Node</a></span></li>
+<li>創建一個球<span><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#create-a-ball">Create a Ball</a></span></li>
+<li>幾何形狀<span><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#geometries">Geometries</a></span></li>
+<li>定義使用機制<span><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#def-use-mechanism">DEF-USE Mechanism</a></span></li>
+<li>添加牆<span><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#add-walls">Add Walls</a></span></li>
+<li>解決方案：世界文件<span><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#solution-world-file">Solution: World File</a></span></li>
+<li>效率<span><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#efficiency">Efficiency</a></span></li>
+<li>結論<span><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#conclusion">Conclusion</a></span></li>
+</ul>
+<p>新的模擬A New Simulation</p>
+<p>首先，我們根據教程<span>1</span>中創建的模擬創建一個新的模擬。</p>
+<p>First we create a new simulation based on the one created in Tutorial 1.</p>
+<p>動手操作<span>1</span>：確保打開了<span>my_first_simulation.wbt</span>文件，並且模擬已暫停並且處於虛擬時間<span>0</span>。使用“文件<span>/</span>另存世界為<span>...</span>”菜單，將模擬保存為障礙。</p>
+<p><strong>Hands-on #1</strong>: Make sure the my_first_simulation.wbt world file is open, and that the simulation is paused and is at a virtual time of 0. Using the File / Save World As... menu, save the simulation as obstacles.wbt.</p>
+<p></p>
+<p>修改地板<strong>Modifying the Floor</strong></p>
+<p>默認的<span>RectangleArena PROTO</span>定義了一個固定在靜態環境上的簡單地板，即沒有<span>Physics</span>節點並且被牆壁包圍。<span><span> </span>Webots</span>對像庫中提供了其他預建樓層。 現在，我們將刪除<span>RectangleArena</span>節點，並添加一個簡單的地板，在本教程的後面部分將用牆手動將其包圍。</p>
+<p>The default RectangleArena PROTO defines a simple floor pinned on the static environment, i.e. without <a href="https://cyberbotics.com/doc/reference/physics">Physics</a> node, and surrounded by walls. Other pre-built floors are available in the Webots objects library. We will now delete the RectangleArena node and add a simple floor that we will manually surround with walls later in this tutorial.</p>
+<p>動手操作<span>2</span>：要刪除<span>RectangleArena</span>，請在<span>3D</span>視圖或場景樹視圖中單擊鼠標左鍵將其選中，然後按鍵盤上的<span>Delete</span>鍵。 或者，可以在<span>3D</span>視圖中右鍵單擊它，然後在上下文菜單中選擇“刪除”（也可以直接在場景樹視圖中使用上下文菜單）。 選擇<span>TexturedBackroundLight</span>節點，然後單擊“添加”按鈕。 在打開的對話框中，然後選擇<span>PROTO</span>節點（<span>Webots</span>項目）<span>/</span>對象<span>/ Floors / Floor</span>（實心）。</p>
+<p><strong>Hands-on #2</strong>: To remove the RectangleArena, select it either in the 3D view or in the scene tree view with a left click and press the Delete key on your keyboard. Alternatively, you can right click on it in the 3D view and select Delete in the context menu (you can also use the context menu directly in the scene tree view). Select the TexturedBackroundLight node and click on the Add button. In the open dialog box, and choose PROTO nodes (Webots Projects) / objects / floors / Floor (Solid).</p>
+<p>新添加的<span>Floor PROTO</span>的默認大小為<span>10mx10m</span>，但是可以通過更改相應的字段來調整其大小，位置和紋理。</p>
+<p>The newly added Floor PROTO has a default size of 10mx10m, but it is possible to adjust its size, its position and texture by changing the corresponding fields.</p>
+<p>動手＃<span>3</span>：在場景樹視圖中，選擇並展開“地板”。 修改大小字段並將其設置為<span>{1</span>，<span>1}</span>以將其大小調整為<span>1mx1m</span>。</p>
+<p><strong>Hands-on #3</strong>: In the scene tree view select and expand the Floor. Modify the size field and set it to {1, 1} to resize it to 1mx1m.</p>
+<p></p>
+<p>實體節點<strong>The Solid Node</strong></p>
+<p>本小節介紹了<span>Webots</span>中最重要的基礎節點：<span>Solid</span>節點，許多其他節點都來自<span>Solid</span>節點。</p>
+<p>This subsection introduces the most important base node in Webots: the <a href="https://cyberbotics.com/doc/reference/solid">Solid</a> node, from which many other nodes derive.</p>
+<p>實體節點表示剛體，即可以忽略變形的剛體。 剛體上任意兩個給定點之間的距離在時間上保持恆定，而不管施加在其上的外力如何。 例如，桌子，機械手指骨或輪子是剛體。 軟體和關節物體不是剛體。 例如，繩索，輪胎，海綿或關節式機械臂不是剛性體。 但是，可以將一個鉸接的實體分解為幾個剛體。</p>
+<p>A <a href="https://cyberbotics.com/doc/reference/solid">Solid</a> node represents a <strong>rigid body</strong>, that is a body in which deformation can be neglected. The distance between any two given points of a rigid body remains constant in time regardless of external forces exerted on it. For example a table, a robot finger phalanx or a wheel are rigid bodies. Soft bodies and articulated objects are not rigid bodies. For example, a rope, a tire, a sponge or an articulated robot arm are not rigid bodies. However, an articulated entity can be broken into several rigid bodies.</p>
+<p><span>Webots</span>的物理引擎僅設計用於模擬剛體。 設計仿真時，重要的一步是將各個實體分解為單獨的剛體。</p>
+<p>The physics engine of Webots is designed for simulating rigid bodies only. An important step, when designing a simulation, is to break up the various entities into separate rigid bodies.</p>
+<p>要定義剛體，您將必須創建一個實體節點。 在此節點內，您將根據剛體的特性設置不同的子節點。 下圖描繪了剛體及其子節點。 實體節點的圖形表示由填充其子級列表的<span>Shape</span>節點定義。 碰撞範圍在其<span>boundingObject</span>字段中定義。 圖形表示和碰撞形狀通常但不一定相同。 最後，物理字段定義對像是屬於動態環境還是屬於靜態環境。 所有這些子節點都是可選的，但物理場需要定義<span>boundingObject</span>。</p>
+<p>To define a rigid body, you will have to create a <a href="https://cyberbotics.com/doc/reference/solid">Solid</a> node. Inside this node you will set up different sub-nodes corresponding to the characteristics of the rigid body. The following <a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#the-simplest-model-of-a-rigid-body-in-webots-having-a-graphical-representation-a-physical-bounding-object-and-being-in-the-dynamical-environment">figure</a> depicts a rigid body and its sub-nodes. The graphical representation of the <a href="https://cyberbotics.com/doc/reference/solid">Solid</a> node is defined by the <a href="https://cyberbotics.com/doc/reference/shape">Shape</a> nodes populating its children list. The collision bounds are defined in its boundingObject field. The graphical representation and the collision shape are often but not necessarily identical. Finally, the physics field defines if the object belongs to the dynamical or to the static environment. All these sub-nodes are optional, but the physics field needs the boundingObject to be defined.</p>
+<p><img alt="" height="293" src="https://s40723104.github.io/cad2019/images/LoALQFQ.png" width="345"/></p>
+<p><em>Webots中剛體的最簡單模型，具有圖形表示，物理邊界對象並且處於動態環境中。</em></p>
+<p><em>The simplest model of a rigid body in Webots having a graphical representation, a physical bounding object and being in the dynamical environment.</em></p>
+<p>幾何框（在此圖中）代表任何類型的幾何圖元。 實際上，它可以用球體，盒子，圓柱體等代替。</p>
+<p>The Geometry box (in <a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#the-simplest-model-of-a-rigid-body-in-webots-having-a-graphical-representation-a-physical-bounding-object-and-being-in-the-dynamical-environment">this figure</a>) stands for any kind of geometrical primitive. In fact, it can be substituted by a <a href="https://cyberbotics.com/doc/reference/sphere">Sphere</a>, a <a href="https://cyberbotics.com/doc/reference/box">Box</a>, a <a href="https://cyberbotics.com/doc/reference/cylinder">Cylinder</a>, etc.</p>
+<p></p>
+<p>創建一個球<strong>Create a Ball</strong></p>
+<p>現在，我們將球添加到模擬中。 如圖所示，該球將被建模為剛體。 球體節點將用於定義球的幾何形狀。</p>
+<p>We will now add a ball to the simulation. That ball will be modeled as a rigid body as shown in this <a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#the-simplest-model-of-a-rigid-body-in-webots-having-a-graphical-representation-a-physical-bounding-object-and-being-in-the-dynamical-environment">figure</a>. A <a href="https://cyberbotics.com/doc/reference/sphere">Sphere</a> node will be used to define the geometry of our ball.</p>
+<p>動手＃<span>4</span>：在場景樹視圖中，選擇最後一個節點，然後按“添加”按鈕。 在對話框中，打開“基礎節點”部分，然後選擇“實體”節點。 在場景樹視圖中，展開“實體”節點並選擇其子字段。 使用“添加”按鈕向其添加一個<span>Shape</span>節點。 選擇“形狀”節點的外觀字段，然後使用“添加”按鈕添加一個<span>PBRAppearance</span>節點。</p>
+<ol>
+<li>將球體節點添加為新創建的形狀節點的幾何字段。</li>
+<li>展開<span>PBRAppearance</span>節點，並將其金屬性字段更改為<span>0</span>，並將其粗糙度字段更改為<span>1</span>。</li>
+<li>將另一個<span>Sphere</span>節點添加到<span>Solid</span>的<span>boundingObject</span>字段。</li>
+<li>最後，將一個<span>Physics</span>節點添加到<span>Solid</span>的<span>Physical</span>字段。</li>
+<li>通過修改實體節點的平移字段，將球放置在機器人的前面（例如，在<span>{0</span>，<span>2</span>，<span>-0.2}</span>處）。</li>
+<li>保存模擬。</li>
+<li>結果如圖所示。</li>
+</ol>
+<p><strong>Hands-on #4</strong>: In the scene tree view, select the last node and press the Add button. In the dialog, open the Bases nodes section and select the <a href="https://cyberbotics.com/doc/reference/solid">Solid</a> node. In the scene tree view, expand the <a href="https://cyberbotics.com/doc/reference/solid">Solid</a> node and select its children field. Add a <a href="https://cyberbotics.com/doc/reference/shape">Shape</a> node to it by using the Add button. Select the appearance field of the <a href="https://cyberbotics.com/doc/reference/shape">Shape</a> node and use the Add button to add a PBRAppearance node.</p>
+<ol>
+<li>Add a <a href="https://cyberbotics.com/doc/reference/sphere">Sphere</a> node as the geometry field of the newly created <a href="https://cyberbotics.com/doc/reference/shape">Shape</a> node.</li>
+<li>Expand the PBRAppearance node and change its metalness field to 0 and its roughness field to 1.</li>
+<li>Add another <a href="https://cyberbotics.com/doc/reference/sphere">Sphere</a> node to the boundingObject field of the <a href="https://cyberbotics.com/doc/reference/solid">Solid</a>.</li>
+<li>Finally add a <a href="https://cyberbotics.com/doc/reference/physics">Physics</a> node to the physics field of the <a href="https://cyberbotics.com/doc/reference/solid">Solid</a>.</li>
+<li>By modifying the translation field of the <a href="https://cyberbotics.com/doc/reference/solid">Solid</a> node, place the ball in front of the robot (at {0, 0.2, -0.2} for example).</li>
+<li>Save the simulation.</li>
+<li>The result is depicted in <a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#your-first-rigid-body-in-webots">this figure</a>.</li>
+</ol>
+<p></p>
+<p><img alt="" height="229" src="https://s40723104.github.io/cad2019/images/HnJ2LGj.png" width="401"/></p>
+<p>                                 <em>Webots中的第一個剛體。</em></p>
+<p><em>                              Your first rigid body in Webots.</em></p>
+<p></p>
+<p>當模擬開始時，球擊中地板。 您可以通過向球施加力來移動球（<span>Ctrl + Alt +</span>左鍵單擊<span>+</span>拖動）。 通過啟用“查看<span>/</span>可選渲染<span>/</span>顯示接觸點”菜單項，可以將球和地板之間的接觸點顯示為青色線。</p>
+<p>When the simulation is started, the ball hits the floor. You can move the ball by <a href="https://cyberbotics.com/doc/guide/the-3d-window#applying-a-force-to-a-solid-object-with-physics">applying a force</a> to it (Ctrl + Alt + left-click + drag). The contact points between the ball and the floor can be displayed as cyan lines by enabling the View / Optional Rendering / Show Contact Points menu item.</p><br />Webots User Guide << <a href='Webots User Guide.html'>Previous</a> <a href='40723130.html'>Next</a> >> 40723130</div>
         
     <!-- footer -->
       <div class="container">
